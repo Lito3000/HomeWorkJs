@@ -47,13 +47,13 @@ function computeNumbersWithAction(inp1,inp2,actionSymbol){
     const num1 = +inp1.value
     const num2 = +inp2.value
 
-    if        (actionSymbol == '+'){
+    if        (actionSymbol === '+'){
         return num1 + num2
-    } else if (actionSymbol == '-'){
+    } else if (actionSymbol === '-'){
         return num1 - num2
-    } else if (actionSymbol == '/'){
+    } else if (actionSymbol === '/'){
         return num1 / num2
-    } else if (actionSymbol == '*'){
+    } else if (actionSymbol === '*'){
         return num1 * num2
     }
     console.log(typeof num1,num2)
