@@ -1,0 +1,149 @@
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-ExtraBoldItalic.eot");
+  src: local("Public Sans ExtraBold Italic"), local("PublicSans-ExtraBoldItalic"), url("./../../../src/assets/fonts/PublicSans-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-ExtraBoldItalic.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-ExtraBoldItalic.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-MediumItalic.eot");
+  src: local("Public Sans Medium Italic"), local("PublicSans-MediumItalic"), url("./../../../src/assets/fonts/PublicSans-MediumItalic.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-MediumItalic.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-MediumItalic.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-Italic.eot");
+  src: local("Public Sans Italic"), local("PublicSans-Italic"), url("./../../../src/assets/fonts/PublicSans-Italic.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-Italic.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-Italic.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans Medium 500";
+  src: url("./../../../src/assets/fonts/PublicSans-Medium.eot");
+  src: local("Public Sans Medium"), local("PublicSans-Medium"), url("./../../../src/assets/fonts/PublicSans-Medium.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-Medium.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-Medium.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-Black.eot");
+  src: local("Public Sans Black"), local("PublicSans-Black"), url("./../../../src/assets/fonts/PublicSans-Black.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-Black.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-Black.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-ExtraLight.eot");
+  src: local("Public Sans ExtraLight"), local("PublicSans-ExtraLight"), url("./../../../src/assets/fonts/PublicSans-ExtraLight.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-ExtraLight.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-ExtraLight.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-ThinItalic.eot");
+  src: local("Public Sans Thin Italic"), local("PublicSans-ThinItalic"), url("./../../../src/assets/fonts/PublicSans-ThinItalic.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-ThinItalic.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-ThinItalic.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-SemiBoldItalic.eot");
+  src: local("Public Sans SemiBold Italic"), local("PublicSans-SemiBoldItalic"), url("./../../../src/assets/fonts/PublicSans-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-SemiBoldItalic.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-SemiBoldItalic.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-LightItalic.eot");
+  src: local("Public Sans Light Italic"), local("PublicSans-LightItalic"), url("./../../../src/assets/fonts/PublicSans-LightItalic.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-LightItalic.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-LightItalic.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-BlackItalic.eot");
+  src: local("Public Sans Black Italic"), local("PublicSans-BlackItalic"), url("./../../../src/assets/fonts/PublicSans-BlackItalic.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-BlackItalic.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-BlackItalic.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-ExtraBold.eot");
+  src: local("Public Sans ExtraBold"), local("PublicSans-ExtraBold"), url("./../../../src/assets/fonts/PublicSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-ExtraBold.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-ExtraBold.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-ExtraBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-BoldItalic.eot");
+  src: local("Public Sans Bold Italic"), local("PublicSans-BoldItalic"), url("./../../../src/assets/fonts/PublicSans-BoldItalic.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-BoldItalic.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-BoldItalic.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-Thin.eot");
+  src: local("Public Sans Thin"), local("PublicSans-Thin"), url("./../../../src/assets/fonts/PublicSans-Thin.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-Thin.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-Thin.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-Regular.eot");
+  src: local("Public Sans Regular"), local("PublicSans-Regular"), url("./../../../src/assets/fonts/PublicSans-Regular.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-Regular.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-Regular.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans Light 300";
+  src: url("./../../../src/assets/fonts/PublicSans-Light.eot");
+  src: local("Public Sans Light"), local("PublicSans-Light"), url("./../../../src/assets/fonts/PublicSans-Light.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-Light.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-Light.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-SemiBold.eot");
+  src: local("Public Sans SemiBold"), local("PublicSans-SemiBold"), url("./../../../src/assets/fonts/PublicSans-SemiBold.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-SemiBold.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-SemiBold.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Public Sans";
+  src: url("./../../../src/assets/fonts/PublicSans-ExtraLightItalic.eot");
+  src: local("Public Sans ExtraLight Italic"), local("PublicSans-ExtraLightItalic"), url("./../../../src/assets/fonts/PublicSans-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("./../../../src/assets/fonts/PublicSans-ExtraLightItalic.woff2") format("woff2"), url("./../../../src/assets/fonts/PublicSans-ExtraLightItalic.woff") format("woff"), url("./../../../src/assets/fonts/PublicSans-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans Medium 500", sans-serif;
+}
+
+.header {
+  color: salmon;
+}
+
+/*# sourceMappingURL=home.css.map */
