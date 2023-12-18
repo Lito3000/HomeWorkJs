@@ -1,3 +1,6 @@
+'use strict';
+
+
 // Task#1
 const list1 = document.querySelector('#list');
 const list2 = document.querySelector('#even');
