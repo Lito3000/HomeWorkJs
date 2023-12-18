@@ -8,8 +8,8 @@ console.log(num1 * num2);
 console.log(num1 / num2);
 
 // Task#1-1
-var n= Number(prompt('Введіть число:','0'));
-var r= Number(prompt('Введіть число:','0'));
+const n= Number(prompt('Введіть число:','0'));
+const r= Number(prompt('Введіть число:','0'));
 
 console.log(n + r);
 console.log(n - r);
