@@ -25,7 +25,7 @@ book.publisher = {
     location: 'South Africa'
 }
 
-console.log(book)
+console.log(book.publisher.location)
 
 // Task#3
 
@@ -42,23 +42,24 @@ console.log("movie", ' ' +  property + " = " + movie[property])
 
 //Task#3
 
-let person1 = { name: "John" };// Две переменных ссылаются на два объекта с одинаковыми свойствами
-let person2 = { name: "Aline" };
+let person1 = {
+    name: "John",
+    age: 43,
+    ring: 'toy'
+}
+let person2 = {
+    name: "John",
+    age: 43,
+    ring: 'toy'
+};
 
-
-console.log(person1 == person2); // вернёт false
-console.log(person1 === person2); // вернёт false
-
-
-let person3 = { name: "Robin" };
-var people = person3; // присвоим переменной people ссылку на объект person3
-
-// теперь people и person3 ссылаются на один и тот же объект
-console.log(person3 == people);// вернёт true
-console.log(person3 === people);// вернёт true
-
-people.name = "Kristin";
-console.log(people); // вернёт { name: "Kristin" } вместо { name: "Robin" }
+for (const key in person1){
+    if(person1[key] === person2[key]){
+        console.log(true)
+    }else{
+        console.log(false)
+    }
+}
 
 //Task#4
 
