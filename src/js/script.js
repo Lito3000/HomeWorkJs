@@ -15,19 +15,23 @@
 
 // Task#3
 
-// let numberSum = prompt('Введите целое число');
-//
-// alert(numberSum.length)
-//
-// if (numberSum < 0 ){
-//     alert('Число' + ' ' + numberSum + ' ' + 'однозначне негативне')
-// }else {
-//     alert('Число' + ' ' + numberSum + ' ' + 'однозначне позитивне')
-// }
+const numberSum = prompt('Введите целое число');
 
+alert(numberSum.length)
+
+let positivNumber = null
+
+if (numberSum < 0 ){
+    positivNumber = 'Число' + ' ' + numberSum + ' ' + 'однозначне негативне';
+}else {
+    positivNumber = 'Число' + ' ' + numberSum + ' ' + 'однозначне позитивне';
+}
+
+
+console.log(positivNumber)
 // Task#4
-
-let sum1 = prompt('Введите целое число');
-let sum2 = prompt('Введите целое число');
-let sum3 = prompt('Введите целое число');
+//
+// let sum1 = prompt('Введите целое число');
+// let sum2 = prompt('Введите целое число');
+// let sum3 = prompt('Введите целое число');
 
