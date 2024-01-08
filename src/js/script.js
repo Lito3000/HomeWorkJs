@@ -17,18 +17,25 @@
 
 const numberSum = prompt('Введите целое число');
 
-alert(numberSum.length)
+let lengthString =  'Кiлькiсть цифр' + `${numberSum.length}`
 
 let positivNumber = null
 
 if (numberSum < 0 ){
     positivNumber = 'Число' + ' ' + numberSum + ' ' + 'однозначне негативне';
-}else {
+}else if(numberSum > 0){
     positivNumber = 'Число' + ' ' + numberSum + ' ' + 'однозначне позитивне';
+}else if(numberSum){
+    positivNumber = 'Шкода що вы не захотiли ввести число'
 }
 
+alert(
+    `${positivNumber}`  + '\n' + `${numberSum}`
+);
 
+// document.write(`${age}`  + '</br>' + `${userCity}` + '</br>' + `${userSport}`);
 console.log(positivNumber)
+
 // Task#4
 //
 // let sum1 = prompt('Введите целое число');
