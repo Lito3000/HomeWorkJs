@@ -45,18 +45,21 @@
 
 // Task#4
 
-let sum1 = prompt('Введите целое число');
-let sum2 = prompt('Введите целое число');
-let sum3 = prompt('Введите целое число');
+let sum1 = Number(prompt('Введите целое число'));
+let sum2 = Number(prompt('Введите целое число'));
+let sum3 = Number(prompt('Введите целое число'));
+
+let result = null;
 
 
-let result = null
-if (sum1 < sum2 && sum2 < sum3) {
+if ((sum1 > sum2) && (sum1 > sum3)) {
     result = sum1
-} else if (sum2 < sum3 && sum2 < sum3) {
+} else if ((sum2 > sum1) && (sum2 > sum3)) {
     result = sum2
-} else if (sum3 < sum1) {
+} else if ((sum3 > sum1) && (sum3 > sum2)) {
     result = sum3
 }
-console.log(result)
 
+alert(result)
+
+//Task#5
