@@ -15,30 +15,48 @@
 
 // Task#3
 
-const numberSum = prompt('Введите целое число');
+// const numberSum = prompt('Введите целое число');
+//
+//
+// let positivNumber = null
+// let lengthString = null
+//
+// if (numberSum < 0 ){
+//     positivNumber = 'Число' + ' ' + numberSum + ' ' + 'однозначне негативне';
+// }else if(numberSum > 0){
+//     positivNumber = 'Число' + ' ' + numberSum + ' ' + 'однозначне позитивне';
+// } else {
+//     positivNumber = 'Шкода що вы не захотiли ввести число'
+// }
+//
+// if (isNaN( +numberSum ) ){
+//     lengthString =  'Шкода що вы не захотiли ввести число'
+// } else if(numberSum !== null){
+//     lengthString =  'Кiлькiсть цифр' + ' ' + `${numberSum.length}`
+// }else {
+//     lengthString =  'Шкода що вы не захотiли ввести число'
+// }
+//
+//
+// alert(
+//     `${positivNumber}`  + '\n' + `${lengthString}`
+// );
 
-let lengthString =  'Кiлькiсть цифр' + `${numberSum.length}`
-
-let positivNumber = null
-
-if (numberSum < 0 ){
-    positivNumber = 'Число' + ' ' + numberSum + ' ' + 'однозначне негативне';
-}else if(numberSum > 0){
-    positivNumber = 'Число' + ' ' + numberSum + ' ' + 'однозначне позитивне';
-}else if(numberSum){
-    positivNumber = 'Шкода що вы не захотiли ввести число'
-}
-
-alert(
-    `${positivNumber}`  + '\n' + `${numberSum}`
-);
-
-// document.write(`${age}`  + '</br>' + `${userCity}` + '</br>' + `${userSport}`);
-console.log(positivNumber)
 
 // Task#4
-//
-// let sum1 = prompt('Введите целое число');
-// let sum2 = prompt('Введите целое число');
-// let sum3 = prompt('Введите целое число');
+
+let sum1 = prompt('Введите целое число');
+let sum2 = prompt('Введите целое число');
+let sum3 = prompt('Введите целое число');
+
+
+let result = null
+if (sum1 < sum2 && sum2 < sum3) {
+    result = sum1
+} else if (sum2 < sum3 && sum2 < sum3) {
+    result = sum2
+} else if (sum3 < sum1) {
+    result = sum3
+}
+console.log(result)
 
