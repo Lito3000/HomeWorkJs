@@ -18,7 +18,7 @@ a > 2 && a < 11 || b >= 6 && b < 14 ? console.log('Верно'): console.log('Н
 
 
 
-let num = Number(prompt('input number or string'));
+const num = Number(prompt('input number or string'));
 
 
 switch (num){
