@@ -1,35 +1,49 @@
 'use strict';
 
 // Task#16
-const num1 = Number(prompt('Твiй рік народження'));
-const num2 = prompt('в якому місті живеш');
-const num3 = prompt('Твiй улюблений вид спорту');
+const year = Number(prompt('Твiй рік народження'));
+const city = prompt('в якому місті живеш');
+// const sport = prompt('Твiй улюблений вид спорту');
 
-if (num1){
-    alert(num1)
+const today = new Date().getFullYear();
+let age = 0;
+
+
+if (year) {
+    age = today - year;
 } else {
-    alert('Шкода, що Ви не захотіли ввести свій вiк')
+    age = 'Шкода, що Ви не захотіли ввести свію дату народження'
+}
+document.write(`${age}`);
+
+let userCity = null;//нул чтоб не было андефаинда
+
+if (city === 'Kiev') {
+    userCity = 'Ти живеш у столиці' + ' ' + city;
+} else if (city === 'Washington') {
+    userCity = 'Ти живеш у столиці' + ' ' + city;
+} else if (city === 'London') {
+    userCity = 'Ти живеш у столиці' + ' ' + city;
+} else if (city) {
+    userCity = 'Ти живеш у містi' + ' ' + city;
+} else {
+    userCity = 'Шкода, що Ви не захотіли ввести свое мiсто';
 }
 
+// let userSport = null;
+//
+//
+// if (sport === 'Сноубординг') {
+//     alert('Круто! Хочеш стати' + ' ' + 'Алессандро Хеммерле' + '?')
+// } else if (sport === 'Фигурное катание') {
+//     alert('Круто! Хочеш стати' + ' ' + 'Луна Хендрикс' + '?')
+// } else if (sport === 'Гимнастика') {
+//     alert('Круто! Хочеш стати' + ' ' + 'Ребека Андраде' + '?')
+// } else {
+//     alert('Шкода, що Ви не захотіли ввести свій улюблений вид спорту')
+// }
 
-if (num2 === 'Kiev') {
-    alert('Ти живеш у столиці' + ' ' + num2)
-} else if (num2 === 'Washington') {
-    alert('Ти живеш у столиці' + ' ' + num2)
-} else if (num2 === 'London') {
-    alert('Ти живеш у столиці' + ' ' + num2)
-} else {
-    alert('Ти живеш у містi' + ' ' + num2)
-}
-
-
-
-if (num3 === 'Сноубординг') {
-    alert('Круто! Хочеш стати' + ' ' + 'Алессандро Хеммерле' + '?')
-} else if (num3 === 'Фигурное катание') {
-    alert('Круто! Хочеш стати' + ' ' + 'Луна Хендрикс' + '?')
-} else if (num3 === 'Гимнастика') {
-    alert('Круто! Хочеш стати' + ' ' + 'Ребека Андраде' + '?')
-} else {
-    alert('Шкода, що Ви не захотіли ввести свій улюблений вид спорту')
-}
+//
+alert(
+    'Your age:' + `${age}` + 'year.' + '\n' + `${userCity}`
+);
