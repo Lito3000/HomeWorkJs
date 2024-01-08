@@ -6,7 +6,6 @@ const  userInput = prompt('Введте число')
 let num = null;
 if (typeof userInput === 'string'){
     num = parseInt(userInput)
-    console.log(num)
 }else {
     console.log('null',userInput)
 }
