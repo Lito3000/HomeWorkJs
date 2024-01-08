@@ -6,7 +6,7 @@ let y = 7;
 x > y ? alert('x більше за y'):alert('x не більше, ніж y')
 
 // Task2#
-let num = Number(prompt('Введите число'))
+const num = Number(prompt('Введите число'))
 
 if (num){
       Number(prompt('Введите число2'))
@@ -45,9 +45,9 @@ alert(
 
 // Task#4
 
-let sum1 = Number(prompt('Введите целое число'));
-let sum2 = Number(prompt('Введите целое число'));
-let sum3 = Number(prompt('Введите целое число'));
+const sum1 = Number(prompt('Введите целое число'));
+const sum2 = Number(prompt('Введите целое число'));
+const sum3 = Number(prompt('Введите целое число'));
 
 let showInfo = null;
 
@@ -65,9 +65,9 @@ alert(`${showInfo}`)
 // Task#5
 
 
-let triangleA = Number(prompt('Введите целое число'));
-let triangleB = Number(prompt('Введите целое число'));
-let triangleC = Number(prompt('Введите целое число'));
+const triangleA = Number(prompt('Введите целое число'));
+const triangleB = Number(prompt('Введите целое число'));
+const triangleC = Number(prompt('Введите целое число'));
 
 let result = null;
 
