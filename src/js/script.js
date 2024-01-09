@@ -2,15 +2,19 @@
 
 const  elem = Number(prompt('Введите число'))
 const smallestDivisor = (num) => {
+    if (num) {
+        const iter = (num, acc) => {
 
-    const iter = (num, acc) => {
+            if (num % acc === 0) return acc
 
-        if (num % acc === 0) return acc
+            return iter(num, acc + 1)
+        }
 
-        return iter(num, acc + 1)
+        return iter(num, 2)
+    } else {
+        return  NaN
     }
 
-    return iter(num, 2)
 }
 
 let h = smallestDivisor(elem)
