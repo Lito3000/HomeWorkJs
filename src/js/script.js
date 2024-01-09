@@ -1,18 +1,17 @@
 'use strict';
 
 
-let line = 0;
-let sum = 0;
 
-for (let i = 1; i <= 20; i++) {
-    if (i % 2 === 0) {
-
-    } else if (i % 2 !== 0) {
-        line = line + i + ' ';
-        sum = sum + i;
-    }
-
-
+let sum = null;
+let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+let line = null
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] % 2 !== 0) {
+        sum = sum + arr[i];
+        line = line + arr[i] + ' ';
+    }else if
+      (arr[i] === 14){
+      break
+  }
 }
-console.log(line,sum)
-
+console.log(sum,line)
