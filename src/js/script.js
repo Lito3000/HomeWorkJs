@@ -2,7 +2,7 @@
 
 const  elem = Number(prompt('Введите число'))
 const smallestDivisor = (num) => {
-    if (num) {
+    if (num && num !== 1) {
         const iter = (num, acc) => {
 
             if (num % acc === 0) return acc
