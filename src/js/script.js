@@ -1,11 +1,11 @@
 'use strict';
 
 // Task#1
-let str = [];
+let str = null;
 for (let i = 10; i <= 20; i++) {
-    str.push(i);
+    str = str + i +', '
 }
-console.log(str.join());
+console.log(str);
 
 // Task#2
 
