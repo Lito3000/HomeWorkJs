@@ -1,8 +1,8 @@
 'use strict';
 
 // Task#1
-var str = [];
-for (var i = 10; i <= 20; i++) {
+let str = [];
+for (let i = 10; i <= 20; i++) {
     str.push(i);
 }
 console.log(str.join());
@@ -38,7 +38,7 @@ console.log(multi)
 
 // Task#6
 let count1 = null;
-var avr = null;
+let avr = null;
 for (let i = 1; i <= 500; i++) {
     avr = avr + i;
     count1 = count1 + 1;
