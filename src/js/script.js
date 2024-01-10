@@ -1,8 +1,13 @@
 'use strict';
 
-
-let number = null;
-for ( let i = 10 ; i <= 20;i++){
-    number = number +','+ i
+// Task#1
+var str = [];
+for (var i = 10; i <= 20; i++) {
+        str.push(i);
 }
-console.log(number)
+console.log(str.join());
+
+// Task#2
+
+
+
