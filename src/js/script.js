@@ -24,6 +24,7 @@ if (num === 1){
 
 alert(outPut)
 
+
 const userInput = prompt('Введіть число');
 
 
