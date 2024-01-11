@@ -1,7 +1,7 @@
 'use strict';
 
 
-const  num = prompt('Введте число')
+const  num = prompt('Введiть число')
 
 let outPut = null
 
