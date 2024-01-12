@@ -21,9 +21,7 @@ console.log(price)
 const n = Number(prompt('Введiть число'))
 
 for (let i = 0; i < 100; i++) {
-    if (Math.pow(i, 2) > n){
-        continue;
-    }
+    if (Math.pow(i, 2) > n)continue;
     else if (Math.pow(i, 2) < n) {
         console.log(i);
     }
