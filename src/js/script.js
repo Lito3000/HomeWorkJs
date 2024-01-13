@@ -22,14 +22,14 @@ const n = Number(prompt('Введiть число'))
 
 for (let i = 0; i < 100; i++) {
     if (Math.pow(i, 2) > n)continue;
-    else if (Math.pow(i, 2) < n) {
+    if (Math.pow(i, 2) < n) {
         console.log(i);
     }
 }
 
 
 // Task#4
-let number = 10;
+const number = 10;
 nextPrime:
 for (let i = 2; i <= number; i++) {
     for (let j = 2; j < i; j++) {
