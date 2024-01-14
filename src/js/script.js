@@ -2,19 +2,19 @@
 
 
 function padString(str, numb) {
-    if (typeof str !==  'string') {
+    if (typeof str !==  'string')
         return console.log('помилка строки')
-    } else if (isNaN(numb)) {
+    if (isNaN(numb))
         return console.log('помилка числа')
-    } else {
+
         let star = ''
-        let g = str.length
-        let k = ''
+        let lengthStr = str.length
+        let answerStar = ''
         for (let i = 0; i < numb; i++) {
             star = star + '*'
-            k = star.substring(g)
+            answerStar = star.substring(lengthStr)
         }
-        console.log(str + k)
-    }
+        console.log(str + answerStar)
+
 }
 padString('привіт', 8)
