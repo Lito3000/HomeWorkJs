@@ -11,6 +11,5 @@ const recycledArray = function recycle(arr) {
     }
     if ((positiveArr.length <= 0) || (!Array.isArray(positiveArr))) return null
     else return positiveArr
-
 }
 console.log(recycledArray(arr))
