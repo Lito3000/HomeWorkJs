@@ -1,6 +1,6 @@
 'use strict';
 
-let arr = [1, 2, 3, -1, -2, -3];
+const arr = [1, 2, 3, -1, -2, -3];
 const recycledArray = function recycle(arr) {
     if ((arr.length <= 0) || (!Array.isArray(arr))) return 'array is empty'
     const positiveArr = []
