@@ -22,7 +22,3 @@ function padString(str, numb, symbol, right = true) {
 padString('привіт', 8, '*')
 padString('привіт', 8, '*', false)
 padString('привіт', 2, '*')
-
-
-
-
