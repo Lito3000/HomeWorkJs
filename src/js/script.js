@@ -8,6 +8,6 @@ const creatFunction = function (elem,str) {
         sum = sum + str[Math.round(Math.random() * (str.length - 1))];
     }
 }
-let sum = '';
+let sum = null;
 creatFunction(16,characters)
 console.log(sum)
