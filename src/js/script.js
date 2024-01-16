@@ -8,6 +8,6 @@ const creatFunction = function (sum, max) {
     }
     return sum
 }
-let sum = [];
-let result = creatFunction(sum, 100)
+const sum = [];
+const result = creatFunction(sum, 100)
 console.log(result)
