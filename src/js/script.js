@@ -1,17 +1,30 @@
 'use strict';
 
-let sum = null;
-const creatFunction = function (max) {
 
+const creatFunction = function (max) {
+let sum = ''
     for (let i = 0; i < max; i++) {
 
         sum = sum + (Math.round(Math.random() * 100)) + ' ';
     }
-
+return sum
 }
+// let sum = true;
+let g = creatFunction(100)
+console.log(g)
 
-creatFunction(100)
-console.log(sum)
+
+const fruits1 = ["Banana", "Orange", "Apple", "Mango"];
+const myArray1 = fruits1.valueOf();
+console.log(myArray1)
+
+const fruits5 = ["Banana", "Orange", "Apple", "Mango"];
+const myAay2 = fruits5;
+console.log(myAay2)
+
+const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+let text = fruits3.toString();
+console.log(text)
 
 // const characters = 'abcdefghijklmnopqrstuvwxyz0123456789';
 // let sum = null;
