@@ -19,7 +19,8 @@ const myArray1 = fruits1.valueOf();
 console.log(myArray1)
 
 const fruits5 = ["Banana", "Orange", "Apple", "Mango"];
-console.log(fruits5)
+const myAay2 = fruits5;
+console.log(myAay2)
 
 const fruits3 = ["Banana", "Orange", "Apple", "Mango"];
 let text = fruits3.toString();
