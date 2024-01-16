@@ -1,6 +1,6 @@
 'use strict';
 
-let sum = null;
+const sum = null;
 const creatFunction = function (sum, max) {
 
     for (let i = 0; i < max; i++) {
