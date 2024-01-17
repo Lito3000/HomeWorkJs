@@ -5,6 +5,6 @@ const creatFunction = function (max) {
         sum.push(Math.round(Math.random() * 100));
     }
 }
-let sum = []
+const sum = []
 creatFunction(100)
 console.log(sum)
