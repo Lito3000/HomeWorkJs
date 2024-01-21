@@ -1,10 +1,16 @@
 'use strict';
 
-const creatFunction = function (max) {
-    for (let i = 0; i < max; i++) {
-        sum.push(Math.round(Math.random() * 100));
-    }
-}
 const sum = []
-creatFunction(100)
+const creatRandomNum = function () {
+    const randomNumber = Math.floor(Math.random() * 100)
+    if (!sum.includes(randomNumber)) {
+        sum.push(randomNumber)
+        return randomNumber
+    }
+    return creatRandomNum()
+}
+
+for (let i = 0; i <= 99; i = i + 1) {
+    creatRandomNum()
+}
 console.log(sum)
