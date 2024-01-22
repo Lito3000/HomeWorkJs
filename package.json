@@ -7,17 +7,29 @@
     "scss-compile-all": "sass --watch ./src/style/scss/index.scss:./src/style/css/style.css",
     "scss-compile-home": "sass --watch ./src/style/scss/home.scss:./src/style/css/home.css"
   },
-  "author": "",
+  "author": "Labunskiy Andrey",
   "license": "ISC",
   "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "3.2.4",
     "stylelint": "^15.11.0",
     "stylelint-config-clean-order": "^5.2.0",
     "stylelint-config-standard-scss": "^11.1.0"
   },
   "dependencies": {
     "bootstrap": "^5.3.2",
-    "bootstrap-icons": "^1.11.2"
+    "bootstrap-icons": "^1.11.2",
+    "lodash": "^4.17.21"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lito3000/HomeWorkJs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Lito3000/HomeWorkJs/issues"
+  },
+  "homepage": "https://github.com/Lito3000/HomeWorkJs#readme",
   "description": ""
 }
-
