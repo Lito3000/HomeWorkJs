@@ -8,13 +8,13 @@ const createUser = function obj(name, age) {
   return user;
 };
 
-function greet() {
+const greet = function greet() {
   console.log(`Hello, my name is ${this.name}`);
-}
+};
 
-function years() {
+const years = function years() {
   console.log(`My age is ${this.age}`);
-}
+};
 
 const user1 = createUser('Alice', 25);
 const user2 = createUser('Bob', 30);
