@@ -21,3 +21,5 @@ const user2 = createUser('Bob', 30);
 user1.greet();
 user2.greet();
 user1.ageUser();
+const g = user1.age;
+console.log(g);
