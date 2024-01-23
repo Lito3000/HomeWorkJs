@@ -1,19 +1,18 @@
 const createUser = function obj(name, age) {
   const user = {
-    name: name,
-    age: age,
-  }
+    name,
+    age,
+  };
   user.greet = greet;
-  return user
+
+  return user;
 };
-createUser('n', 34);
 
-function greet(){
-  console.log(`Hello, my name is ${this.name}`);
-}
+const greet = function greet() {
+  console.log(`Hello, my name is ${this.name} , my age is ${this.age}`);
+};
 
-let user1 = createUser("Alice",25)
-let user2 = createUser("Bob",30)
-
-let g = 6;
-console.log(g)
+const user1 = createUser('Alice', 25);
+const user2 = createUser('Bob', 30);
+user1.greet();
+user2.greet();
