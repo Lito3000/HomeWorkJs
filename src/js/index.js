@@ -1,3 +1,6 @@
+const greet = function greet() {
+  console.log(`Hello, my name is ${this.name} , my age is ${this.age}`);
+};
 const createUser = function obj(name, age) {
   const user = {
     name,
@@ -6,10 +9,6 @@ const createUser = function obj(name, age) {
   user.greet = greet;
 
   return user;
-};
-
-const greet = function greet() {
-  console.log(`Hello, my name is ${this.name} , my age is ${this.age}`);
 };
 
 const user1 = createUser('Alice', 25);
