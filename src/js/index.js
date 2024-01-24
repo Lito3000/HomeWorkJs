@@ -1,7 +1,7 @@
-const createUser = function obj(name, age) {
+const createUser = function obj(a, b) {
   const user = {
-    name,
-    age,
+    name: a,
+    age: b,
   };
   user.greet = greet;
   user.ageUser = years;
