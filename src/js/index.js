@@ -43,16 +43,29 @@
 // console.log(g);
 
 function nachi(num) {
+  console.log('f', num);
   if (num < 2) {
     return num;
   }
-  const l = nachi(num - 1);
-  console.log(l);
-  const k = nachi(num - 2);
-  console.log(k);
-  const y = nachi(num - 1) + nachi(num - 2);
-  console.log(y);
+
+  // const l = nachi(num - 1);
+  console.log('num', num);
+  // console.log('l', l);
+  // const k = nachi(num - 2);
+  // console.log('k', k);
+  // const y = nachi(num - 1) + nachi(num - 2);
+  // console.log('y', y);
   return nachi(num - 1) + nachi(num - 2);
 }
 
-console.log(nachi(2));
+console.log('result', nachi(5));
+
+// function countdown(i) {
+//   console.log(i);
+//   if (i <= 0) {
+//     return;
+//   }
+//   countdown(i - 1);
+//   console.log(i);
+// }
+// countdown(5);
