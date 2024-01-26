@@ -43,13 +43,13 @@
 // console.log(g);
 
 function nachi(num) {
-  console.log('f', num);
+  // console.log('f', num);
   if (num < 2) {
     return num;
   }
 
   // const l = nachi(num - 1);
-  console.log('num', num);
+  // console.log('num', num);
   // console.log('l', l);
   // const k = nachi(num - 2);
   // console.log('k', k);
@@ -62,7 +62,7 @@ console.log('result', nachi(5));
 
 // function countdown(i) {
 //   console.log(i);
-//   if (i <= 0) {
+//   if (i <= 3) {
 //     return;
 //   }
 //   countdown(i - 1);
