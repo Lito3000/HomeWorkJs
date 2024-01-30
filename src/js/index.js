@@ -64,6 +64,5 @@ const candidate2 = createCandidate('Cat', skillsList2);
 const candidate3 = createCandidate('Vlad', skillsList3);
 const candidates = [candidate1, candidate2, candidate3];
 
-
 const k = planInterviews(candidates, skillsRequirements, interview);
 console.log(k);
