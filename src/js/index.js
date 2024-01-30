@@ -23,18 +23,19 @@ addRequirement('Angular', skillsRequirements);
 const interview = function (candidate, requirements) {
   let result = null;
 
-  for (let i = 0; i < candidate.skills.length; i++) {
-    // console.log(candidate.skills[i]);
+  // console.log(candidate.skills[i]);
 
-    for (let r = 0; r < requirements.length; r++) {
-      if (candidate.skills[i] === requirements[r]) {
-        result = 100;
-      } else {
-        result = 0;
-      }
+  // eslint-disable-next-line no-plusplus
+  for (let r = 0; r < requirements.length; r++) {
+    if (candidate.skills[r] === requirements[r]) {
+      result = 100;
+    } else {
+      // eslint-disable-next-line no-return-assign
+      return result = 0;
     }
   }
 
+  // eslint-disable-next-line consistent-return
   return result;
 };
 
@@ -42,6 +43,7 @@ const interview = function (candidate, requirements) {
 
 const planInterviews = function (candidates, req, scoreFunc) {
   const result = [];
+  // eslint-disable-next-line no-plusplus
   for (let i = 0; i < candidates.length; i++) {
     // 1 Погано
     // candidates[i].score = scoreFunc(candidates[i], req)
@@ -51,7 +53,6 @@ const planInterviews = function (candidates, req, scoreFunc) {
     result.push({
       score: scoreFunc(candidates[i], req),
       candidate: candidates[i],
-      pads: req,
     });
   }
 
@@ -63,7 +64,6 @@ const candidate2 = createCandidate('Cat', skillsList2);
 const candidate3 = createCandidate('Vlad', skillsList3);
 const candidates = [candidate1, candidate2, candidate3];
 
-const r = interview(candidate2, skillsRequirements);
-console.log(r);
+
 const k = planInterviews(candidates, skillsRequirements, interview);
 console.log(k);
