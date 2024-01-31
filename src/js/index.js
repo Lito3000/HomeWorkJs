@@ -1,4 +1,4 @@
-function parseUrl(url) {
+const parse = function parseUrl(url) {
   const parsedUrl = new URL(url);
 
   return {
@@ -10,10 +10,12 @@ function parseUrl(url) {
     search: parsedUrl.search,
     hash: parsedUrl.hash,
     origin: parsedUrl.origin,
+    password: parsedUrl.password,
+    port: parsedUrl.port,
+    searchParams: parsedUrl.searchParams,
+    username: parsedUrl.username,
   };
-}
+};
 
 // Приклад використання
-console.log(parseUrl('https://example.com:8080/path/name?query=123#hash'));
-
-alert(location);
+console.log(parse(window.location));
