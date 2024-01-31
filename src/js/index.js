@@ -8,8 +8,9 @@ function myFunction() { // во время компиляци функция fun
   console.log('Hello, world!');
 }
 // Task#3
-console.log(b);// let и const хостятся в temporal dead zone // b объявлена только мы не имеем к ней доступа,будет ошибка Uncaught ReferenceError
-// все переменные которые инициализованы без значения несут в себе undefined
+console.log(b);// let и const хостятся в temporal dead zone
+               // b объявлена только мы не имеем к ней доступа,будет ошибка Uncaught ReferenceError
+
 let b = 5;
 // Task#4
 
