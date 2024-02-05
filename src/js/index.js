@@ -1,10 +1,6 @@
 // Task#1
-const runCallbacks = function(callback, index) {
-    let y = null
-    for (let i = 0; i < callback.length; i++) {
-        y = y + callback[i](index)
-    }
-    return y
+function runCallbacks(callbacks, value) {
+    return callbacks.reduce((accumulator, currentCallback) => currentCallback(accumulator), value);
 }
 const addOne = x => x + 1;
 const square = x => x * x;
