@@ -165,3 +165,13 @@ const myTotalPrice = products.myReduce(function (acc, product, i, arr) {
     return acc + product.price;
 }, 0)
 console.log(myTotalPrice)
+
+
+const maxNumberReduce1 = elem.myReduce(function (total, number, index, array) {
+    if (number > total[1]) {
+        return [index, number]
+    } else {
+        return total;
+    }
+}, [0, elem[0]]);
+console.log(maxNumberReduce1)
