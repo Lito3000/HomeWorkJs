@@ -81,6 +81,18 @@ const maxNumber = elem.reduce(function (total, number, index, array) {
 
 console.log(maxNumber)
 //Task#6 Нахождение индекса максимального числа в масиве
+
+let maximum = elem[0]
+let index = 0
+for (let i = 0; i < elem.length; i++) {
+    if (elem[i] > maximum) {
+        maximum = elem[i];
+        index = i
+    }
+}
+console.log(index)
+
+
 const maxNumberReduce = elem.reduce((total, number, index, array) => {
     if (number > total[1]) {
         return [index, number]
@@ -111,11 +123,19 @@ const cars = [
     }
 ];
 
-const carsIds = cars.reduce(function (acc,car,index,array){
-    if(car.year>1960){
+const carsIds = cars.reduce(function (acc, car, index, array) {
+    if (car.year > 1960) {
         acc.push(car.id)
     }
     return acc
-},[])
+}, [])
 
 console.log(carsIds)
+
+const carsIds1 = []
+for (let i = 0; i < cars.length; i++) {
+    if (cars[i].year > 1960) {
+        carsIds1.push(cars[i].id)
+    }
+}
+console.log(carsIds1)
