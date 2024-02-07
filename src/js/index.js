@@ -139,3 +139,29 @@ for (let i = 0; i < cars.length; i++) {
     }
 }
 console.log(carsIds1)
+
+//Task#7 Вывести стоимость всех товаров
+
+const products =[
+    {title:'phone',price:100},
+    {title: 'laptop',price: 2500},
+    {title: 'Tv',price: 500},
+    {title: 'Desktop',price: 1500}
+];
+
+const totalPrice1 = products.reduce(function (acc,product,i,arr){
+    return acc + product.price
+},0)
+
+console.log(totalPrice1);
+Array.prototype.myReduce = function (fn,acc){
+    for(let i = 0;i<this.length;i++){
+        acc =fn(acc,this[i],i,this);
+    }
+    return acc
+};
+
+const myTotalPrice = products.myReduce(function (acc,product,i,arr){
+    return acc + product.price;
+},0)
+console.log(myTotalPrice)
