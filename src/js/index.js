@@ -30,11 +30,18 @@
 // ()
 
 if(true){
-    var foo = 285;
-    const g = function f() {
+
+   function f() {
         console.log('vire')
     }
+
+
+    let g = 6
+    var foo = 285;
+
 }
-console.log(foo)
 f()
+console.log(g)
+console.log(foo)
+
 
