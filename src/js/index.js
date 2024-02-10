@@ -16,6 +16,23 @@ const callbacks = [addOne, square1, addOne];
 const result = runCallbacks(callbacks, 1);
 console.log(result);
 
+const  raid = [6,8,5,3,9]
+const myFindIndex = function (arr, callback, index) {
+    for (let i = 0; i < arr.length; i++) {
+
+        if (callback(arr[i], index, arr)) {
+            return i
+        }
+    }
+    return -1
+}
+
+const result4 = myFindIndex(raid, function (item, id) {
+    if (item === id) {
+        return true
+    }
+}, 1)
+console.log(result4)
 function composeFunctions(...funcs){
     console.log(funcs)
     return function (value){
