@@ -1,4 +1,21 @@
 
+Array.prototype.myReduce = function (fn, acc) {
+    for (let i = 0; i < this.length; i++) {
+        acc = fn(acc, this[i], i, this);
+    }
+    return acc
+};
+function runCallbacks(backs, value) {
+    return backs.myReduce(function (accumulator, currentCallback) {
+        return  currentCallback(accumulator)
+    }, value);
+}
+const addOne = x => x + 1;
+const square1 = x => x * x;
+const callbacks = [addOne, square1, addOne];
+const result = runCallbacks(callbacks, 1);
+console.log(result);
+
 function composeFunctions(...funcs){
     console.log(funcs)
     return function (value){
