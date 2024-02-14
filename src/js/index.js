@@ -16,8 +16,10 @@ function factorial(n) {
 console.log(factorial(4))
 
 
-const g = function (b){
-    return b + b
-}
-
-console.log(4 * g(5+5),4 + g(5))
+// const g = function (y){
+// return y
+// }
+//
+// console.log( g(5+5))
+// console.log(4 + g(5))
+// console.log(4 + undefined)
