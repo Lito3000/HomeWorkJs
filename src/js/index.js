@@ -6,11 +6,18 @@ function factorial(n) {
 
         return 1
 
-    } else {
+    }else {
 
-        return n * factorial(n - 1)
+       return  n * factorial(n - 1)
 
     }
 }
 
-console.log(factorial(3))
+console.log(factorial(4))
+
+
+const g = function (b){
+    return b + b
+}
+
+console.log(4 * g(5+5),4 + g(5))
