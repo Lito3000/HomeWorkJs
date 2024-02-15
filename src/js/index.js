@@ -29,6 +29,8 @@ function factorial1(n) {
 function factorial0(n) {
     if (n === 0) {
         return 1
+    }else {
+        return n * factorial0(n - 1)
     }
 }
 
