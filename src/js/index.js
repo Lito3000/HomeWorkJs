@@ -19,3 +19,15 @@ function pow(num, degree) {
 
 console.log(pow(2, 12))
 
+//Task#3
+
+function elem(num1, num2) {
+    if (num1 === 0) {
+        return num2
+    } else {
+        return elem(num1 - 1, ++num2)
+    }
+}
+
+const g = elem(56, 12)
+console.log(g)
