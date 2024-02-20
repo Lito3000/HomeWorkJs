@@ -1,4 +1,4 @@
-// // 'use strict'
+'use strict'
 // let foo = 50
 // function ex(){
 //     let foo = 101
@@ -55,51 +55,51 @@ console.log(typeof this)//window
 //
 // example.call(sumJob, 10, 20)
 
-let obj = {
-    clean: 'hand',
-    action: 'alcohol',
-    sanitizing: function () {
-        console.log(typeof this)
-        return this
-    }
-}
-console.log(obj.sanitizing().sanitizing())
-
-// const obj3 = {
-//   name: 'Alex',
-//   age: '23',
-//   next: {
-//     name: 'Hocking',
-//     age: 33,
-//     next: {
-//       name: 'Ralf',
-//       age: 50,
-//       next: {}
+// let obj = {
+//     clean: 'hand',
+//     action: 'alcohol',
+//     sanitizing: function () {
+//         console.log(typeof this)
+//         return this
 //     }
-//
-//   }
 // }
-//
-// const interLinkedList = function (data) {
-//     // if (typeof data.name === 'undefined') {
-//         if (!data.name) {
-//             return null
-//         } else {
-//             console.log(data.name)
-//             return interLinkedList(data.next)
-//             // // console.log(typeof data.name)
-//             // // console.log(typeof 'u')
-//             // console.log(typeof undefined)
-//             // // console.log('undefined')
-//             // console.log(!undefined)
-//             // console.log(!data.name)
-//             // console.log(Boolean (undefined))
-//             // console.log(String (undefined))
-//             // console.log(Number (undefined))
-//         }
-//
-//     // }
-// }
-// let f =interLinkedList(obj3)
-//
-// console.log(f)
+// console.log(obj.sanitizing().sanitizing())
+
+const obj3 = {
+  name: 'Alex',
+  age: '23',
+  next: {
+    name: 'Hocking',
+    age: 33,
+    next: {
+      name: 'Ralf',
+      age: 50,
+      next: null
+    }
+
+  }
+}
+const arr = []
+const interLinkedList = function (data) {
+    arr.push(data.name)
+    // if (typeof data.name === 'undefined') {
+        if (!data.next) {
+            return null
+        } else {
+            interLinkedList(data.next)
+            // // console.log(typeof data.name)
+            // // console.log(typeof 'u')
+            // console.log(typeof undefined)
+            // // console.log('undefined')
+            // console.log(!undefined)
+            // console.log(!data.name)
+            // console.log(Boolean (undefined))
+            // console.log(String (undefined))
+            // console.log(Number (undefined))
+        }
+return arr
+     // }
+}
+let f =interLinkedList(obj3)
+
+console.log(f)
