@@ -58,7 +58,7 @@
 var obj = {
     clean: 'hand',
     action: 'alcohol',
-    sanitizing: function () {//эта функция является методом объекта obj
+    sanitizing: function () {
         console.log(typeof this)
         return this
     }
@@ -66,7 +66,7 @@ var obj = {
 console.log(obj.sanitizing().sanitizing())
 
 var year = 6
-function a7(){//эта функция является методом объекта window
+function a7(){
     console.log(this)
 }
 a7()
