@@ -55,16 +55,21 @@
 //
 // example.call(sumJob, 10, 20)
 
-let obj = {
+var obj = {
     clean: 'hand',
     action: 'alcohol',
-    sanitizing: function () {
+    sanitizing: function () {//эта функция является методом объекта obj
         console.log(typeof this)
         return this
     }
 }
 console.log(obj.sanitizing().sanitizing())
 
+var year = 6
+function a7(){//эта функция является методом объекта window
+    console.log(this)
+}
+a7()
 // const obj3 = {
 //   name: 'Alex',
 //   age: '23',
