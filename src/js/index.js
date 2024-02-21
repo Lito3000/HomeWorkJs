@@ -7,7 +7,7 @@ const x = (str) => {
         if (str[i].length > 5) {
             str[i] = str[i]
         } else {
-           delete str[i]
+           arr.splice(str[i],1)
         }
     }
     return arr
