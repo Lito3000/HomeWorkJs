@@ -1,13 +1,13 @@
 //Task#1
 
-const arr = ['professional', 'r', 'strength', 'cleansing', 'moisturising', 'hand', 'cleanser', 'action', 'antimicrobial'];
+const arr = ['professional', 'apply', 'strength', 'cleansing', 'moisturising', 'hand', 'cleanser', 'action', 'antimicrobial'];
 
 const x = (str) => {
     for (let i = 0; i < str.length; i++) {
         if (str[i].length > 5) {
             str[i] = str[i]
         } else {
-           str.splice(i,1)
+            str.splice(i, 1)
         }
     }
     return str
