@@ -7,10 +7,10 @@ const x = (str) => {
         if (str[i].length > 5) {
             str[i] = str[i]
         } else {
-           arr.splice(i,1)
+           str.splice(i,1)
         }
     }
-    return arr
+    return str
 }
 
 const result = x(arr)
