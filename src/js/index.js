@@ -7,8 +7,9 @@ let product = {
     eggs: 35,
     chocolate: 20
 }
-let  k = 10
-function example (a) {
+let k = 10
+
+function example(a) {
     const values = Object.entries(this)
     let val = ''
     for (let [key, val] of values) {
@@ -17,5 +18,6 @@ function example (a) {
     }
     return val
 }
-example.call(product,k)
+
+example.call(product, k)
 console.log(product)
