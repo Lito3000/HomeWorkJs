@@ -10,9 +10,9 @@ let ladder = {
         return this
     },
     showStep: function () {
-        console.log(this.step);
         return this
     }
 };
 
-ladder.up().up().up().up().down().showStep();
+const result = ladder.up().up().up().up().down().showStep().step;
+console.log(result)
