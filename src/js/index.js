@@ -1,5 +1,4 @@
 'use strict'
-
 let product = {
     flour: 56,
     butter: 90,
@@ -7,17 +6,10 @@ let product = {
     eggs: 35,
     chocolate: 20
 }
-let k = 10
-
-function example(a) {
-    const values = Object.entries(this)
-    let val = ''
-    for (let [key, val] of values) {
-        val -= (val * a) / 100;
-        console.log(val)
-    }
-    return val
+const clone = {}
+for (let key in product) {
+    clone[key] = product[key]
+    clone[key] = clone[key] - (product[key] * 10) / 100;
 }
-
-example.call(product, k)
 console.log(product)
+console.log(clone)
