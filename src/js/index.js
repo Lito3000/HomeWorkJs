@@ -36,3 +36,44 @@ console.log(g)
 
 //Task#3
 
+const student = {
+    John: 45,
+    Mark: 15,
+    Milana: 36,
+    Robert: 78,
+    Kate: 98,
+    Katrin: 95
+}
+
+const rating = {}
+for (let key in student) {
+    if(student[key] > 90){
+        rating[key] = student[key] ;
+    }
+
+}
+console.log(student)
+console.log(rating)
+
+//Task#4
+
+const student3 = {
+    John: 45,
+    Mark: 15,
+    Milana: 36,
+    Robert: 78,
+    Kate: 98,
+    Katrin: 95
+}
+
+const rating3 = {}
+const x3 = () => {
+    for (let key in student3) {
+        if (student3[key] > 90) {
+            rating3[key] = student3[key];
+        }
+    }
+    return rating3
+}
+const s = x3()
+console.log(s)
