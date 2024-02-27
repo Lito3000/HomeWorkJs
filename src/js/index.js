@@ -9,12 +9,10 @@
         chocolate: 20,
         getFullName() {
             const sum = () => {
-                this.flour = this.flour - (this.flour * 10) / 100
-                this.butter = this.butter - (this.butter * 10) / 100
-                this.sugar = this.sugar - (this.sugar * 10) / 100
-                this.eggs = this.eggs - (this.eggs * 10) / 100
-                this.chocolate = this.chocolate - (this.chocolate * 10) / 100
-                delete product.getFullName;
+                for (let key in product) {
+                    this[key] = this[key] - (this[key] * 10) / 100
+                    delete product.getFullName;
+                }
             }
             sum()
             return this
