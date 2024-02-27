@@ -30,10 +30,10 @@
         chocolate: 20,
     }
     const example = (elem) => {
-      for (let key in elem){
-          elem[key] = elem[key] - (elem[key]* 10/100)
-      }
-      return elem
+        for (let key in elem) {
+            elem[key] = elem[key] - (elem[key] * 10 / 100)
+        }
+        return elem
     }
     console.log(prod)
     const prodResult = example(prod)
@@ -66,7 +66,7 @@
     console.log(student)
 
     //Task#2-2
-    const stud ={
+    const stud = {
         John: 45,
         Mark: 15,
         Milana: 36,
@@ -74,14 +74,14 @@
         Kate: 98,
         Katrin: 95,
     }
-    const  arr = {}
+    const arr = {}
     const studFun = (elem) => {
-      for (let key in elem){
-          if (elem[key] > 90){
-              arr[key] = elem[key]
-          }
-      }
-      return arr
+        for (let key in elem) {
+            if (elem[key] > 90) {
+                arr[key] = elem[key]
+            }
+        }
+        return arr
     }
     const out = studFun(stud)
     console.log(out)
