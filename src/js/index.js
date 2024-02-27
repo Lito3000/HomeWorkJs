@@ -18,8 +18,8 @@
             return resultProduct
         }
     }
-    const r = product.getFullName()
-    console.log(r)
+    const res = product.getFullName()
+    console.log(res)
     console.log(product)
 
 // Task#2
