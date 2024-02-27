@@ -1,7 +1,7 @@
 //Task#1
 (function () {
     'use strict'
-    const person = {
+    const product = {
         flour: 56,
         butter: 90,
         sugar: 50,
@@ -14,13 +14,13 @@
                 this.sugar = this.sugar - (this.sugar * 10) / 100
                 this.eggs = this.eggs - (this.eggs * 10) / 100
                 this.chocolate = this.chocolate - (this.chocolate * 10) / 100
-                delete person.getFullName;
+                delete product.getFullName;
             }
             sum()
             return this
         }
     }
-    const r = person.getFullName()
+    const r = product.getFullName()
     console.log(r)
 
 // Task#2
