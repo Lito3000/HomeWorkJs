@@ -1,6 +1,7 @@
 //Task#1
 (function () {
     'use strict'
+    const resultProduct = {}
     const product = {
         flour: 56,
         butter: 90,
@@ -10,16 +11,16 @@
         getFullName() {
             const sum = () => {
                 for (let key in product) {
-                    this[key] = this[key] - (this[key] * 10) / 100
-                    delete product.getFullName;
+                    resultProduct[key] = this[key] - (this[key] * 10) / 100
                 }
             }
             sum()
-            return this
+            return resultProduct
         }
     }
     const r = product.getFullName()
     console.log(r)
+    console.log(product)
 
 // Task#2
     const rating = {}
