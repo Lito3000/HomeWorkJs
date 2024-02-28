@@ -86,3 +86,31 @@
     const out = studFun(stud)
     console.log(out)
 })()
+
+//Task#2-3
+function example() {
+
+    const rating = {}
+    const student = {
+        John: 45,
+        Mark: 15,
+        Milana: 36,
+        Robert: 78,
+        Kate: 98,
+        Katrin: 95,
+        sortRating() {
+            const x3 = () => {
+                for (let key in student) {
+                    if (student[key] > 90) {
+                        rating[key] = student[key];
+                    }
+                }
+            }
+            x3()
+            return rating
+        }
+    }
+    return student.sortRating()
+}
+const result3 = example()
+console.log(result3)
