@@ -2,7 +2,8 @@ const parseJSON = function (a) {
     try {
         JSON.parse(a)
         return true
-    } catch (error) {
+    } catch (er) {
+        console.log(er)
         return "Invalid JSON string"
     }
 }
