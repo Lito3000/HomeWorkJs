@@ -3,12 +3,12 @@
     const arr = [1, 2, [1.1, 1.2, 1.3], 3]
     const generateList = function (item) {
         const ul = document.createElement('ul')
-        for (let i = 0; i < item.length; i++) {
+        for (const [key,value]of Object.entries(item)){
             const li = document.createElement('li')
-            if (!Array.isArray(item[i])) {
-                li.innerHTML = item[i]
+            if (Array.isArray(value)) {
+                li.append(generateList(value))
             } else {
-                li.append(generateList(item[i]))
+                li.innerHTML = value
             }
             ul.append(li)
         }
