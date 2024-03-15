@@ -1,6 +1,31 @@
 @use "./../../common/mixins" as mix;
 @use "./../../common/variables" as var;
 
-.header{
-  color: salmon;
+.header {
+  color: #092822;
+
+  .err-label {
+    display: block;
+    color: red;
+    margin: 0;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 18px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    button {
+      width: fit-content;
+    }
+  }
 }
+
+

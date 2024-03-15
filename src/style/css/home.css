@@ -12000,7 +12000,26 @@ textarea.form-control-lg {
   }
 }
 .header {
-  color: salmon;
+  color: #092822;
+}
+.header .err-label {
+  display: block;
+  color: red;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+.header label {
+  display: block;
+  margin-bottom: 18px;
+}
+.header form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.header form button {
+  width: fit-content;
 }
 
 /*# sourceMappingURL=home.css.map */
