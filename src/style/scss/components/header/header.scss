@@ -11,6 +11,8 @@
   border-radius: 20px;
   padding: 10px;
   width: 200px;
+  display: flex;
+  justify-content: center;
 }
 body{
   height: 100vh;
@@ -23,15 +25,18 @@ body{
   background: linear-gradient(to right bottom, rgb(206, 34, 233), rgb(654, 87, 67, 44));
   padding: 20px;
   border-radius: 30px;
-
+  align-items: center;
+  flex-direction: column;
+  display: flex;
 }
 .quiz__answer{
+  width: 270px;
   cursor: pointer;
   background: #54d5d5;
   border: #1dce49;
   margin: 24px;
   border-radius: 20px;
   padding: 10px;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: 700;
 }
