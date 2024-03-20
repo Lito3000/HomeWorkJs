@@ -37,7 +37,7 @@
             }
         ]
     }
-    let totalSteps = data.questions.length
+    const totalSteps = data.questions.length
     let step = 0
 
     next.onclick = () => {
